@@ -1,0 +1,1820 @@
+{
+  "metric_note": "event mAP within a symmetric +/- matching radius; this custom diagnostic differs from SoccerNet's official delta full-window convention",
+  "main_models": {
+    "late": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.25963082039890467,
+        "sd": 0.0047276641414289375,
+        "values": [
+          0.2561431493626503,
+          0.2598424402964938,
+          0.26046846923888567,
+          0.266913025846208,
+          0.2547870172502855
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.3143665432355397,
+        "sd": 0.002915008521069173,
+        "values": [
+          0.3136259554738327,
+          0.31312982808258844,
+          0.31423437613232064,
+          0.3192728210579467,
+          0.31156973543101
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3478993556830631,
+        "sd": 0.0018792386367911368,
+        "values": [
+          0.34662782771142925,
+          0.3495785083597139,
+          0.34989086364718613,
+          0.3478926413025621,
+          0.34550693739442445
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.766790299273334,
+        "sd": 0.02252628024127218,
+        "values": [
+          2.7546421336934506,
+          2.8050632911392404,
+          2.7527017899358324,
+          2.752216124947235,
+          2.7693281566509116
+        ]
+      },
+      "parameter_count": 159089
+    },
+    "rtgre": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.2512188907629355,
+        "sd": 0.004787201312806609,
+        "values": [
+          0.25517893085041377,
+          0.24363890384863307,
+          0.25071764459151796,
+          0.2554916923760975,
+          0.25106728214801527
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.3066059755469594,
+        "sd": 0.00663352112186049,
+        "values": [
+          0.3098311175813139,
+          0.29825272199440694,
+          0.3045665286108275,
+          0.31593387058677436,
+          0.30444563896147453
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.341035667006282,
+        "sd": 0.0068436127101300275,
+        "values": [
+          0.3433151656431285,
+          0.33291743295887694,
+          0.33767800756723165,
+          0.3512319706107503,
+          0.3400357582514226
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.775466398631443,
+        "sd": 0.011860561331447776,
+        "values": [
+          2.774043738917504,
+          2.771529888551165,
+          2.7638067893936835,
+          2.795473737544334,
+          2.7724778387505276
+        ]
+      },
+      "parameter_count": 186929
+    },
+    "rtgre_flow": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.24979421365081392,
+        "sd": 0.005197279539479659,
+        "values": [
+          0.2529813581166981,
+          0.2512802819118087,
+          0.2433601513991226,
+          0.2558094761487318,
+          0.24553980067770856
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.30241764338111177,
+        "sd": 0.004243098035809244,
+        "values": [
+          0.306163624044806,
+          0.3000140558883253,
+          0.2980323628026003,
+          0.3077037684896115,
+          0.30017440568021575
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.33832507913442267,
+        "sd": 0.004832214693851356,
+        "values": [
+          0.3403253592291406,
+          0.339166298180441,
+          0.3326722542893285,
+          0.34486816452187546,
+          0.334593319451328
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.7772696085088646,
+        "sd": 0.02921210860118177,
+        "values": [
+          2.77868783247488,
+          2.77823737970623,
+          2.76340454276788,
+          2.743308283374145,
+          2.8227100042211903
+        ]
+      },
+      "parameter_count": 186929
+    },
+    "tcn_fusion": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.22318721809182335,
+        "sd": 0.0070534210976552604,
+        "values": [
+          0.2191444881112197,
+          0.2209213766413144,
+          0.23525800283271708,
+          0.22306472505374958,
+          0.21754749782011593
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.2752611963885086,
+        "sd": 0.006457079223285529,
+        "values": [
+          0.27338701657416087,
+          0.27289794071289264,
+          0.2854931376217266,
+          0.2764483365472577,
+          0.2680795504865053
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.31262580467049256,
+        "sd": 0.008928920822623474,
+        "values": [
+          0.3089338930042569,
+          0.3139111922558203,
+          0.3268876034901219,
+          0.3105677538484292,
+          0.30282858075383445
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.864175127530318,
+        "sd": 0.02146848502898513,
+        "values": [
+          2.859134696636809,
+          2.8818611720993075,
+          2.828887388147898,
+          2.8768789055902717,
+          2.874113475177305
+        ]
+      },
+      "parameter_count": 130961
+    },
+    "tcn_visual": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.22268203801519837,
+        "sd": 0.00518200563802204,
+        "values": [
+          0.2291898110905637,
+          0.22104547780992673,
+          0.22524159453664702,
+          0.222723233783254,
+          0.2152100728556005
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.2708851974840597,
+        "sd": 0.005587472031579926,
+        "values": [
+          0.278557915220095,
+          0.2693533630927802,
+          0.27108398251951,
+          0.27238050250301366,
+          0.2630502240848996
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3049557942834524,
+        "sd": 0.005234475284091373,
+        "values": [
+          0.312399709982919,
+          0.3033788089998337,
+          0.30357386697856903,
+          0.30717046744660503,
+          0.29825611800933527
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.852300697991177,
+        "sd": 0.014686261029834934,
+        "values": [
+          2.8665259603208106,
+          2.866283977713996,
+          2.8317149370936416,
+          2.850941643442277,
+          2.846036971385161
+        ]
+      },
+      "parameter_count": 106385
+    },
+    "text": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.04946918041921938,
+        "sd": 0.0013436646549964428,
+        "values": [
+          0.04963661065957467,
+          0.049843467981821286,
+          0.05031681291814359,
+          0.04713591032572248,
+          0.05041310021083485
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.09317785879009542,
+        "sd": 0.004022653859201959,
+        "values": [
+          0.09249795167794028,
+          0.09542535026965283,
+          0.08989811741940382,
+          0.08918671951288054,
+          0.0988811550705997
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.1438570172227278,
+        "sd": 0.0058726969003762754,
+        "values": [
+          0.14303084095218796,
+          0.14882353542964347,
+          0.13816513925045346,
+          0.138347711720084,
+          0.15091785876127017
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 4.68852082057232,
+        "sd": 0.029074542744337243,
+        "values": [
+          4.727548953409858,
+          4.691450755338003,
+          4.6474607727349415,
+          4.697105240948603,
+          4.679038380430198
+        ]
+      },
+      "parameter_count": 82193
+    },
+    "visual": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.2513557115062701,
+        "sd": 0.011434722433094688,
+        "values": [
+          0.25237536234803465,
+          0.23915890577126817,
+          0.2591376041599305,
+          0.2654405940241765,
+          0.2406660912279408
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.30335209264916135,
+        "sd": 0.011347874458862062,
+        "values": [
+          0.30345514473678326,
+          0.2913284074097173,
+          0.31203728077235765,
+          0.31700831273303104,
+          0.2929313175939175
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3357314328360255,
+        "sd": 0.009123913844546147,
+        "values": [
+          0.33428860210477007,
+          0.3260537112349355,
+          0.34338251683491205,
+          0.3467582460986056,
+          0.32817408790690433
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.758883449514294,
+        "sd": 0.024785202711920754,
+        "values": [
+          2.756838905775076,
+          2.765684370514228,
+          2.757409440175631,
+          2.7226067871011312,
+          2.7918777440054034
+        ]
+      },
+      "parameter_count": 106769
+    }
+  },
+  "paired_seed_differences": [
+    {
+      "comparison": "late minus visual",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        0.010170810737049452,
+        0.021801420672871108,
+        0.002197095359962986,
+        0.0022645083249156484,
+        0.018638417837092525
+      ],
+      "mean": 0.011014450586378344,
+      "sd": 0.009076102842767275,
+      "descriptive_t_ci95": [
+        -0.00025501955748064194,
+        0.022283920730237328
+      ]
+    },
+    {
+      "comparison": "rtgre minus visual",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        0.00637597284453062,
+        0.006924314584689617,
+        -0.0074707521615301475,
+        -0.0010744421462566822,
+        0.011514321367557034
+      ],
+      "mean": 0.003253882897798088,
+      "sd": 0.007503441759603778,
+      "descriptive_t_ci95": [
+        -0.006062870597720644,
+        0.01257063639331682
+      ]
+    },
+    {
+      "comparison": "rtgre_flow minus visual",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        0.00270847930802276,
+        0.008685648478607977,
+        -0.014004917969757336,
+        -0.009304544243419532,
+        0.007243088086298255
+      ],
+      "mean": -0.0009344492680495753,
+      "sd": 0.010168394273758269,
+      "descriptive_t_ci95": [
+        -0.01356017835731655,
+        0.011691279821217399
+      ]
+    },
+    {
+      "comparison": "tcn_visual minus visual",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        -0.02489722951668827,
+        -0.021975044316937142,
+        -0.04095329825284766,
+        -0.044627810230017384,
+        -0.02988109350901791
+      ],
+      "mean": -0.03246689516510167,
+      "sd": 0.009924364400772786,
+      "descriptive_t_ci95": [
+        -0.044789621146596334,
+        -0.020144169183607008
+      ]
+    },
+    {
+      "comparison": "tcn_fusion minus visual",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        -0.030068128162622387,
+        -0.018430466696824688,
+        -0.026544143150631028,
+        -0.04055997618577334,
+        -0.024851767107412215
+      ],
+      "mean": -0.028090896260652733,
+      "sd": 0.008148553589221058,
+      "descriptive_t_ci95": [
+        -0.0382086618898226,
+        -0.017973130631482863
+      ]
+    },
+    {
+      "comparison": "rtgre minus late",
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "differences": [
+        -0.003794837892518832,
+        -0.014877106088181491,
+        -0.009667847521493134,
+        -0.0033389504711723306,
+        -0.00712409646953549
+      ],
+      "mean": -0.007760567688580256,
+      "sd": 0.004742511001551683,
+      "descriptive_t_ci95": [
+        -0.013649172860292267,
+        -0.001871962516868244
+      ]
+    }
+  ],
+  "paired_game_cluster_bootstrap": {
+    "method": "paired nonparametric bootstrap over validation games; identical game multiplicities for both models; AP recomputed from game-weighted ranked detections within each replicate",
+    "results": [
+      {
+        "comparison": "late minus visual",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": 0.011014450586378344,
+        "game_cluster_bootstrap_ci95_low": 0.004563021644534666,
+        "game_cluster_bootstrap_ci95_high": 0.018520228683305537
+      },
+      {
+        "comparison": "rtgre minus visual",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": 0.003253882897798088,
+        "game_cluster_bootstrap_ci95_low": -0.004979661850936753,
+        "game_cluster_bootstrap_ci95_high": 0.011695360474576212
+      },
+      {
+        "comparison": "rtgre_flow minus visual",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": -0.0009344492680495753,
+        "game_cluster_bootstrap_ci95_low": -0.007014297212985913,
+        "game_cluster_bootstrap_ci95_high": 0.0078044529336444134
+      },
+      {
+        "comparison": "tcn_visual minus visual",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": -0.03246689516510167,
+        "game_cluster_bootstrap_ci95_low": -0.039593568715491044,
+        "game_cluster_bootstrap_ci95_high": -0.024669725014191225
+      },
+      {
+        "comparison": "tcn_fusion minus visual",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": -0.028090896260652733,
+        "game_cluster_bootstrap_ci95_low": -0.034304723500133055,
+        "game_cluster_bootstrap_ci95_high": -0.019928775518013416
+      },
+      {
+        "comparison": "rtgre minus late",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": -0.007760567688580256,
+        "game_cluster_bootstrap_ci95_low": -0.014991734596880815,
+        "game_cluster_bootstrap_ci95_high": -0.0012242491878102656
+      },
+      {
+        "comparison": "rtgre_flow minus rtgre",
+        "metric": "class-macro event mAP with +/-10-s matching",
+        "games": 54,
+        "paired_training_seeds": [
+          2026,
+          2027,
+          2028,
+          2029,
+          2030
+        ],
+        "bootstrap_replicates": 1000,
+        "point_mean_difference_across_seeds": -0.004188332165847663,
+        "game_cluster_bootstrap_ci95_low": -0.009992234307883163,
+        "game_cluster_bootstrap_ci95_high": 0.003909713871909459
+      }
+    ]
+  },
+  "game_cluster_bootstrap_sensitivity": {
+    "comparison": "late minus visual",
+    "games": 54,
+    "training_seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "replicates": 1000,
+    "seed_aggregation": "Within each replicate, recompute AP separately for each paired seed and model; subtract visual from late within seed; then average the five paired seed differences.",
+    "duplicate_games": "Game multiplicities weight both detections and ground-truth counts identically for both models.",
+    "empty_class_primary": "The prespecified 17-class macro average assigns AP=0 to a class absent from a replicate and retains the fixed denominator of 17; because resampling is paired, that class contributes zero to the model difference.",
+    "sensitivity": "The available-class macro average excludes classes with no ground truth in that replicate from both paired models.",
+    "results": {
+      "fixed_17_class_macro": {
+        "ci95_low": 0.004563021644534655,
+        "ci95_high": 0.01852022868330557,
+        "replicate_mean": 0.011540935536161364
+      },
+      "available_class_macro": {
+        "ci95_low": 0.004614234597187484,
+        "ci95_high": 0.018626042360015537,
+        "replicate_mean": 0.01164703313928175
+      }
+    }
+  },
+  "text_controls": {
+    "late_shift60": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.24347125252204402,
+        "sd": 0.007718758962596384,
+        "values": [
+          0.2505764846119362,
+          0.23586611191888185,
+          0.23460419364064491,
+          0.25009118925946927,
+          0.2462182831792878
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.29589515084335344,
+        "sd": 0.005713830749748805,
+        "values": [
+          0.3006927437900501,
+          0.2879580470896752,
+          0.2917108310903527,
+          0.2999100211043524,
+          0.29920411114233664
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3282720337041821,
+        "sd": 0.003648834795265137,
+        "values": [
+          0.33006572894087477,
+          0.32354501939513997,
+          0.32539494642303235,
+          0.33230327692302186,
+          0.33005119683884176
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.75857943703162,
+        "sd": 0.030752074878627897,
+        "values": [
+          2.743204457200743,
+          2.774814314652262,
+          2.778725200506543,
+          2.7116326186054365,
+          2.7845205941931126
+        ]
+      },
+      "parameter_count": 159089
+    },
+    "late_zero": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.25019984909323095,
+        "sd": 0.005922317127957892,
+        "values": [
+          0.24754169206995022,
+          0.25019641470441184,
+          0.2603255128314252,
+          0.24527527443659036,
+          0.24766035142377701
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.3008111702551256,
+        "sd": 0.0065716463894056505,
+        "values": [
+          0.2992704756340038,
+          0.2992839803510887,
+          0.3121927208413997,
+          0.2952504353912441,
+          0.29805823905789164
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.33393099031126094,
+        "sd": 0.005887892987374523,
+        "values": [
+          0.330533514932795,
+          0.3356392905649949,
+          0.34320019045508987,
+          0.3279544799549857,
+          0.33232747564843956
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.744755015017625,
+        "sd": 0.015728764968077066,
+        "values": [
+          2.735304054054054,
+          2.7699645449940906,
+          2.732055396047965,
+          2.7361978726996457,
+          2.75025320729237
+        ]
+      },
+      "parameter_count": 159089
+    }
+  },
+  "future_text_control": {
+    "late_symmetric10": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.29165734464987153,
+        "sd": 0.004090143434906476,
+        "values": [
+          0.2888848267421456,
+          0.29703418610907945,
+          0.287945787972156,
+          0.29503329872615947,
+          0.28938862369981705
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.3507291422721118,
+        "sd": 0.004621927565308315,
+        "values": [
+          0.348411889266001,
+          0.3543707585241492,
+          0.34943575413753514,
+          0.3564208648343041,
+          0.34500644459856983
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3853824913077969,
+        "sd": 0.00562282239904629,
+        "values": [
+          0.38352828665333927,
+          0.390615514214163,
+          0.38345420971646993,
+          0.39139783218915786,
+          0.37791661376585456
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.750906571371866,
+        "sd": 0.02260633270271398,
+        "values": [
+          2.7620293770048963,
+          2.7676597181196727,
+          2.7585013922875707,
+          2.755000421976538,
+          2.7113419474706526
+        ]
+      },
+      "parameter_count": 159089
+    }
+  },
+  "tfidf_sensitivity": {
+    "late_tfidf512": {
+      "n": 5,
+      "seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "event_mAP@5s": {
+        "mean": 0.25594678587256403,
+        "sd": 0.003907396591632057,
+        "values": [
+          0.2518745070569429,
+          0.2536355664396084,
+          0.26069454399477526,
+          0.25952751427542325,
+          0.25400179759607044
+        ]
+      },
+      "event_mAP@10s": {
+        "mean": 0.31244688226397577,
+        "sd": 0.003270156393216664,
+        "values": [
+          0.30758403311145666,
+          0.3153660828639758,
+          0.3137244591456119,
+          0.31487188235548375,
+          0.3106879538433509
+        ]
+      },
+      "event_mAP@20s": {
+        "mean": 0.3460780160433372,
+        "sd": 0.0037094655158396894,
+        "values": [
+          0.3414959420365313,
+          0.35178391065873016,
+          0.3460083076374557,
+          0.34486998029573884,
+          0.3462319395882299
+        ]
+      },
+      "onset_MAE@10s": {
+        "mean": 2.763544635456773,
+        "sd": 0.017064442314340053,
+        "values": [
+          2.752257955600574,
+          2.7618806448890014,
+          2.7905445335584633,
+          2.766691989533215,
+          2.7463480537026093
+        ]
+      },
+      "parameter_count": 183665
+    }
+  },
+  "late_text_delay": {
+    "event_mAP@10s": {
+      "mean": 0.3143665432355397,
+      "sd": 0.002915008521069173,
+      "values": [
+        0.3136259554738327,
+        0.31312982808258844,
+        0.31423437613232064,
+        0.3192728210579467,
+        0.31156973543101
+      ]
+    },
+    "event_mAP@10s_text_delay_10s": {
+      "mean": 0.31246438213992633,
+      "sd": 0.005233150829871949,
+      "values": [
+        0.3153020952372901,
+        0.30519388147915893,
+        0.30959525149575895,
+        0.3187363867930356,
+        0.3134942956943881
+      ]
+    },
+    "event_mAP@10s_text_delay_20s": {
+      "mean": 0.30421748115766056,
+      "sd": 0.0039818502575759175,
+      "values": [
+        0.3083721359890379,
+        0.30052283279775893,
+        0.3047429917403274,
+        0.3077088887490713,
+        0.2997405565121072
+      ]
+    }
+  },
+  "nms_sensitivity": {
+    "visual": {
+      "4": {
+        "mean": 0.27873095430851036,
+        "sd": 0.01118939260751949,
+        "values": [
+          0.2782565569824588,
+          0.2660908460958644,
+          0.2858566795439537,
+          0.29338947611146765,
+          0.27006121280880724
+        ]
+      },
+      "8": {
+        "mean": 0.30335209264916135,
+        "sd": 0.011347874458862062,
+        "values": [
+          0.30345514473678326,
+          0.2913284074097173,
+          0.31203728077235765,
+          0.31700831273303104,
+          0.2929313175939175
+        ]
+      },
+      "12": {
+        "mean": 0.30976918172098455,
+        "sd": 0.011245950938871868,
+        "values": [
+          0.3101485193661291,
+          0.2969449179385224,
+          0.31755616115784235,
+          0.32371268754102683,
+          0.3004836226014022
+        ]
+      }
+    },
+    "late": {
+      "4": {
+        "mean": 0.28755209600100107,
+        "sd": 0.0030702648787972017,
+        "values": [
+          0.28699916147389704,
+          0.2863064769887024,
+          0.2874993117529612,
+          0.29260888401733254,
+          0.28434664577211216
+        ]
+      },
+      "8": {
+        "mean": 0.3143665432355397,
+        "sd": 0.002915008521069173,
+        "values": [
+          0.3136259554738327,
+          0.31312982808258844,
+          0.31423437613232064,
+          0.3192728210579467,
+          0.31156973543101
+        ]
+      },
+      "12": {
+        "mean": 0.3212344413245968,
+        "sd": 0.003071012524881816,
+        "values": [
+          0.3206793864593567,
+          0.3188482967174945,
+          0.3212097193124309,
+          0.3264135989919669,
+          0.3190212051417348
+        ]
+      }
+    }
+  },
+  "zero_text_inference": {
+    "late": {
+      "mean": 0.29628878758366856,
+      "sd": 0.0048396776531419135,
+      "values": [
+        0.3042086780865185,
+        0.2932665307932403,
+        0.2975789702817352,
+        0.29247999823392645,
+        0.2939097605229224
+      ]
+    },
+    "rtgre": {
+      "mean": 0.2865637058802703,
+      "sd": 0.007951351948560392,
+      "values": [
+        0.28927940353025816,
+        0.27967050169274127,
+        0.28126904210945397,
+        0.29920897063542934,
+        0.28339061143346905
+      ]
+    },
+    "rtgre_flow": {
+      "mean": 0.28187590469994855,
+      "sd": 0.01166283270007433,
+      "values": [
+        0.29626262870116776,
+        0.2704799337939029,
+        0.279376001927009,
+        0.2916522235259685,
+        0.2716087355516948
+      ]
+    },
+    "tcn_fusion": {
+      "mean": 0.24553638588858528,
+      "sd": 0.014046393874366828,
+      "values": [
+        0.25246787050168357,
+        0.2620134844785355,
+        0.25132154270817497,
+        0.23318219272970236,
+        0.2286968390248301
+      ]
+    }
+  },
+  "timing": {
+    "late": {
+      "median_bins_per_second": 47333.71329294537,
+      "median_milliseconds_per_bin": 0.021126590973563873
+    },
+    "rtgre": {
+      "median_bins_per_second": 37363.83074987774,
+      "median_milliseconds_per_bin": 0.026763851027327333
+    },
+    "rtgre_flow": {
+      "median_bins_per_second": 42394.8767182861,
+      "median_milliseconds_per_bin": 0.023587755818822137
+    },
+    "tcn_fusion": {
+      "median_bins_per_second": 56308.971166852665,
+      "median_milliseconds_per_bin": 0.017759159495861446
+    },
+    "tcn_visual": {
+      "median_bins_per_second": 66377.62580753682,
+      "median_milliseconds_per_bin": 0.01506531738419688
+    },
+    "text": {
+      "median_bins_per_second": 72505.16019069614,
+      "median_milliseconds_per_bin": 0.013792121793399195
+    },
+    "visual": {
+      "median_bins_per_second": 61867.40149475935,
+      "median_milliseconds_per_bin": 0.016163601118510007
+    }
+  },
+  "timing_environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "python": "3.13.5",
+    "torch": "2.14.0+cpu",
+    "torch_threads": 6,
+    "device": "CPU"
+  },
+  "class_effects_late_minus_visual": [
+    {
+      "class": "Kick-off",
+      "late_minus_visual": 0.034197537763882166,
+      "late_mean": 0.6113734767369741,
+      "visual_mean": 0.5771759389730918
+    },
+    {
+      "class": "Direct free-kick",
+      "late_minus_visual": 0.03405220079440051,
+      "late_mean": 0.37426712964027686,
+      "visual_mean": 0.34021492884587634
+    },
+    {
+      "class": "Indirect free-kick",
+      "late_minus_visual": 0.033929406773992074,
+      "late_mean": 0.3190696648137976,
+      "visual_mean": 0.2851402580398056
+    },
+    {
+      "class": "Yellow card",
+      "late_minus_visual": 0.028892976916455294,
+      "late_mean": 0.3519796269862425,
+      "visual_mean": 0.3230866500697872
+    },
+    {
+      "class": "Substitution",
+      "late_minus_visual": 0.020320235392884477,
+      "late_mean": 0.5654353519625775,
+      "visual_mean": 0.5451151165696931
+    },
+    {
+      "class": "Clearance",
+      "late_minus_visual": 0.01863081324469986,
+      "late_mean": 0.41787753179030424,
+      "visual_mean": 0.3992467185456044
+    },
+    {
+      "class": "Shots on target",
+      "late_minus_visual": 0.01321730236772396,
+      "late_mean": 0.1815986085700271,
+      "visual_mean": 0.16838130620230313
+    },
+    {
+      "class": "Red card",
+      "late_minus_visual": 0.01252609748300176,
+      "late_mean": 0.03229044833660641,
+      "visual_mean": 0.01976435085360465
+    },
+    {
+      "class": "Corner",
+      "late_minus_visual": 0.010818617159776122,
+      "late_mean": 0.7107385072317166,
+      "visual_mean": 0.6999198900719406
+    },
+    {
+      "class": "Ball out of play",
+      "late_minus_visual": 0.006551028040243512,
+      "late_mean": 0.41783721075583874,
+      "visual_mean": 0.4112861827155953
+    },
+    {
+      "class": "Yellow->red card",
+      "late_minus_visual": 0.003590204196499371,
+      "late_mean": 0.010551410565406514,
+      "visual_mean": 0.006961206368907143
+    },
+    {
+      "class": "Offside",
+      "late_minus_visual": 0.002434091084646927,
+      "late_mean": 0.028812306324962206,
+      "visual_mean": 0.026378215240315278
+    },
+    {
+      "class": "Goal",
+      "late_minus_visual": -0.0007664352778012778,
+      "late_mean": 0.08462677809429701,
+      "visual_mean": 0.08539321337209829
+    },
+    {
+      "class": "Foul",
+      "late_minus_visual": -0.001995360032128149,
+      "late_mean": 0.11422654011925815,
+      "visual_mean": 0.1162219001513863
+    },
+    {
+      "class": "Throw-in",
+      "late_minus_visual": -0.0022637856860032056,
+      "late_mean": 0.6326985272585837,
+      "visual_mean": 0.6349623129445868
+    },
+    {
+      "class": "Shots off target",
+      "late_minus_visual": -0.0035132048397290396,
+      "late_mean": 0.1191621589746092,
+      "visual_mean": 0.12267536381433826
+    },
+    {
+      "class": "Penalty",
+      "late_minus_visual": -0.023376065414112124,
+      "late_mean": 0.371685956842696,
+      "visual_mean": 0.39506202225680814
+    }
+  ],
+  "selection_audit": {
+    "note": "Source-language metadata are unavailable in whisper_v1_en and therefore cannot be audited.",
+    "splits": {
+      "train": {
+        "official_games": 300,
+        "retained_games": 176,
+        "excluded_games": 124,
+        "retained_labelled_games": 176,
+        "excluded_labelled_games": 98,
+        "retained_composition": {
+          "leagues": {
+            "england_epl": 8,
+            "europe_uefa-champions-league": 35,
+            "france_ligue-1": 25,
+            "germany_bundesliga": 28,
+            "italy_serie-a": 49,
+            "spain_laliga": 31
+          },
+          "seasons": {
+            "2014-2015": 21,
+            "2015-2016": 45,
+            "2016-2017": 110
+          },
+          "league_seasons": {
+            "england_epl/2014-2015": 2,
+            "england_epl/2015-2016": 4,
+            "england_epl/2016-2017": 2,
+            "europe_uefa-champions-league/2014-2015": 9,
+            "europe_uefa-champions-league/2015-2016": 18,
+            "europe_uefa-champions-league/2016-2017": 8,
+            "france_ligue-1/2015-2016": 1,
+            "france_ligue-1/2016-2017": 24,
+            "germany_bundesliga/2014-2015": 5,
+            "germany_bundesliga/2015-2016": 7,
+            "germany_bundesliga/2016-2017": 16,
+            "italy_serie-a/2014-2015": 1,
+            "italy_serie-a/2015-2016": 4,
+            "italy_serie-a/2016-2017": 44,
+            "spain_laliga/2014-2015": 4,
+            "spain_laliga/2015-2016": 11,
+            "spain_laliga/2016-2017": 16
+          }
+        },
+        "excluded_composition": {
+          "leagues": {
+            "england_epl": 50,
+            "europe_uefa-champions-league": 27,
+            "france_ligue-1": 2,
+            "germany_bundesliga": 3,
+            "italy_serie-a": 7,
+            "spain_laliga": 35
+          },
+          "seasons": {
+            "2014-2015": 24,
+            "2015-2016": 44,
+            "2016-2017": 56
+          },
+          "league_seasons": {
+            "england_epl/2014-2015": 2,
+            "england_epl/2015-2016": 21,
+            "england_epl/2016-2017": 27,
+            "europe_uefa-champions-league/2014-2015": 13,
+            "europe_uefa-champions-league/2015-2016": 11,
+            "europe_uefa-champions-league/2016-2017": 3,
+            "france_ligue-1/2014-2015": 1,
+            "france_ligue-1/2015-2016": 1,
+            "germany_bundesliga/2015-2016": 3,
+            "italy_serie-a/2014-2015": 6,
+            "italy_serie-a/2015-2016": 1,
+            "spain_laliga/2014-2015": 2,
+            "spain_laliga/2015-2016": 7,
+            "spain_laliga/2016-2017": 26
+          }
+        },
+        "retained_label_counts": {
+          "Ball out of play": 11271,
+          "Clearance": 2825,
+          "Corner": 1748,
+          "Direct free-kick": 919,
+          "Foul": 4239,
+          "Goal": 585,
+          "Indirect free-kick": 3811,
+          "Kick-off": 891,
+          "Offside": 761,
+          "Penalty": 57,
+          "Red card": 23,
+          "Shots off target": 1940,
+          "Shots on target": 2093,
+          "Substitution": 1002,
+          "Throw-in": 6641,
+          "Yellow card": 716,
+          "Yellow->red card": 13
+        },
+        "excluded_label_counts": {
+          "Ball out of play": 6379,
+          "Clearance": 1529,
+          "Corner": 904,
+          "Direct free-kick": 362,
+          "Foul": 2213,
+          "Goal": 288,
+          "Indirect free-kick": 2042,
+          "Kick-off": 460,
+          "Offside": 372,
+          "Penalty": 30,
+          "Red card": 7,
+          "Shots off target": 998,
+          "Shots on target": 1061,
+          "Substitution": 552,
+          "Throw-in": 3884,
+          "Yellow card": 399,
+          "Yellow->red card": 7
+        },
+        "retained_annotations_per_labelled_game": 224.6306818181818,
+        "excluded_annotations_per_labelled_game": 219.25510204081633,
+        "label_distribution_total_variation": 0.025374891900396396,
+        "league_distribution_total_variation": 0.4827712609970674
+      },
+      "valid": {
+        "official_games": 100,
+        "retained_games": 54,
+        "excluded_games": 46,
+        "retained_labelled_games": 54,
+        "excluded_labelled_games": 39,
+        "retained_composition": {
+          "leagues": {
+            "england_epl": 3,
+            "europe_uefa-champions-league": 9,
+            "france_ligue-1": 8,
+            "germany_bundesliga": 7,
+            "italy_serie-a": 16,
+            "spain_laliga": 11
+          },
+          "seasons": {
+            "2014-2015": 8,
+            "2015-2016": 15,
+            "2016-2017": 31
+          },
+          "league_seasons": {
+            "england_epl/2014-2015": 1,
+            "england_epl/2015-2016": 1,
+            "england_epl/2016-2017": 1,
+            "europe_uefa-champions-league/2014-2015": 1,
+            "europe_uefa-champions-league/2015-2016": 6,
+            "europe_uefa-champions-league/2016-2017": 2,
+            "france_ligue-1/2016-2017": 8,
+            "germany_bundesliga/2014-2015": 1,
+            "germany_bundesliga/2015-2016": 4,
+            "germany_bundesliga/2016-2017": 2,
+            "italy_serie-a/2014-2015": 1,
+            "italy_serie-a/2015-2016": 1,
+            "italy_serie-a/2016-2017": 14,
+            "spain_laliga/2014-2015": 4,
+            "spain_laliga/2015-2016": 3,
+            "spain_laliga/2016-2017": 4
+          }
+        },
+        "excluded_composition": {
+          "leagues": {
+            "england_epl": 16,
+            "europe_uefa-champions-league": 11,
+            "france_ligue-1": 1,
+            "germany_bundesliga": 1,
+            "italy_serie-a": 2,
+            "spain_laliga": 15
+          },
+          "seasons": {
+            "2014-2015": 12,
+            "2015-2016": 22,
+            "2016-2017": 12
+          },
+          "league_seasons": {
+            "england_epl/2015-2016": 11,
+            "england_epl/2016-2017": 5,
+            "europe_uefa-champions-league/2014-2015": 7,
+            "europe_uefa-champions-league/2015-2016": 4,
+            "france_ligue-1/2015-2016": 1,
+            "germany_bundesliga/2014-2015": 1,
+            "italy_serie-a/2014-2015": 2,
+            "spain_laliga/2014-2015": 2,
+            "spain_laliga/2015-2016": 6,
+            "spain_laliga/2016-2017": 7
+          }
+        },
+        "retained_label_counts": {
+          "Ball out of play": 3423,
+          "Clearance": 823,
+          "Corner": 520,
+          "Direct free-kick": 293,
+          "Foul": 1233,
+          "Goal": 186,
+          "Indirect free-kick": 1086,
+          "Kick-off": 284,
+          "Offside": 235,
+          "Penalty": 22,
+          "Red card": 5,
+          "Shots off target": 518,
+          "Shots on target": 674,
+          "Substitution": 304,
+          "Throw-in": 2066,
+          "Yellow card": 196,
+          "Yellow->red card": 2
+        },
+        "excluded_label_counts": {
+          "Ball out of play": 2440,
+          "Clearance": 602,
+          "Corner": 367,
+          "Direct free-kick": 117,
+          "Foul": 782,
+          "Goal": 158,
+          "Indirect free-kick": 745,
+          "Kick-off": 213,
+          "Offside": 149,
+          "Penalty": 13,
+          "Red card": 7,
+          "Shots off target": 412,
+          "Shots on target": 450,
+          "Substitution": 219,
+          "Throw-in": 1406,
+          "Yellow card": 149,
+          "Yellow->red card": 6
+        },
+        "retained_annotations_per_labelled_game": 219.8148148148148,
+        "excluded_annotations_per_labelled_game": 211.15384615384616,
+        "label_distribution_total_variation": 0.027848494288203157,
+        "league_distribution_total_variation": 0.48711755233494364
+      }
+    }
+  },
+  "text_coverage": {
+    "train": {
+      "bins": 483642,
+      "segments": 270690,
+      "bins_with_completed_segment_in_20s_window": 469183,
+      "segment_coverage_fraction": 0.9701039198415357,
+      "bins_with_nonzero_256_term_vector": 463688,
+      "nonzero_vector_fraction": 0.958742210147175
+    },
+    "valid": {
+      "bins": 148054,
+      "segments": 83782,
+      "bins_with_completed_segment_in_20s_window": 144308,
+      "segment_coverage_fraction": 0.9746984208464479,
+      "bins_with_nonzero_256_term_vector": 141069,
+      "nonzero_vector_fraction": 0.9528212679157605
+    }
+  },
+  "official_crosschecks": {
+    "late_seed2028": {
+      "tight": {
+        "a_mAP": 0.12131162777390904,
+        "a_mAP_per_class": [
+          0.14913779136385846,
+          0.12020817973174241,
+          0.24826270204715173,
+          0.18775384825591052,
+          0.03528764718828069,
+          0.11642102323541925,
+          0.06813416489284557,
+          0.1418476692193059,
+          0.030945455836359805,
+          0.3438503572361542,
+          0.009044286253337978,
+          0.05027891194412433,
+          0.09987882061405182,
+          0.13646614391207662,
+          0.16964001457005046,
+          0.15358871765741156,
+          0.0015519381983721894
+        ],
+        "a_mAP_visible": 0.1621367628443406,
+        "a_mAP_per_class_visible": [
+          0.1495486478875508,
+          0.20594641165929364,
+          0.2798203245631455,
+          0.21836374025001404,
+          0.036683458386745055,
+          0.1247445303463211,
+          0.08156741364783551,
+          0.19682240070074225,
+          0.039947196991750436,
+          0.4365246599992192,
+          0.2593582887700535,
+          0.050252422691084875,
+          0.10105336724744826,
+          0.15704842606642241,
+          0.1918340913448351,
+          0.17298183660515642,
+          0.05382775119617225
+        ],
+        "a_mAP_unshown": 0.061271698922429264,
+        "a_mAP_per_class_unshown": [
+          0.15148204658889042,
+          0.03882333549492467,
+          0.040995971974607484,
+          0.029091863363799864,
+          0.001403296476609857,
+          0.0,
+          0.05644300041836588,
+          0.11470533156556251,
+          0.0037504435195428914,
+          0.0,
+          0.0,
+          0.175,
+          0.030366372757677104,
+          0.03268053546835417,
+          0.12144275074876927,
+          0.0003471376144762254,
+          0.0
+        ]
+      },
+      "loose": {
+        "a_mAP": 0.33624761549759213,
+        "a_mAP_per_class": [
+          0.42750583996997665,
+          0.42656749821352274,
+          0.6603282955040203,
+          0.39843235850696224,
+          0.20028788831938665,
+          0.15202238727362272,
+          0.37687798394006916,
+          0.5839663663581987,
+          0.046599336129759666,
+          0.5280730841174206,
+          0.011999434569790702,
+          0.11660770164678803,
+          0.23743033426975277,
+          0.5848926672926577,
+          0.6031160790459489,
+          0.3584673069354833,
+          0.003034901365705615
+        ],
+        "a_mAP_visible": 0.4033611074514155,
+        "a_mAP_per_class_visible": [
+          0.4295404184049769,
+          0.5601703114652732,
+          0.6885520397412862,
+          0.46230054769964857,
+          0.20322385781081398,
+          0.16823186297543308,
+          0.3549603178548156,
+          0.7175957634344402,
+          0.05699132517359156,
+          0.7277725176553568,
+          0.332209599428258,
+          0.11707214115865677,
+          0.2404880557638699,
+          0.6540122946377224,
+          0.6276966360076389,
+          0.41105797956754436,
+          0.10526315789473686
+        ],
+        "a_mAP_unshown": 0.2784934993965089,
+        "a_mAP_per_class_unshown": [
+          0.43424651957439875,
+          0.2804739453456553,
+          0.4795774433357503,
+          0.12792361630906465,
+          0.13604950131978538,
+          0.0,
+          0.4013324512051995,
+          0.5330855922941375,
+          0.015321576007471764,
+          0.0,
+          0.0,
+          0.2409090909090909,
+          0.0769230769230769,
+          0.26438860773646783,
+          0.5309639329725125,
+          0.09922013822200389,
+          0.0
+        ]
+      },
+      "at5": {
+        "a_mAP": 0.19585518631929488,
+        "a_mAP_per_class": [
+          0.24409734218093215,
+          0.21097049268708812,
+          0.36749138789783503,
+          0.25935630199225285,
+          0.12285691988263571,
+          0.13896135566969384,
+          0.11048531261319437,
+          0.36279914000538527,
+          0.03563522306558265,
+          0.43747440908685137,
+          0.010246139556484384,
+          0.08024335072207182,
+          0.18507473664238913,
+          0.23626995289104916,
+          0.28296811371629055,
+          0.24157308745257103,
+          0.003034901365705615
+        ],
+        "a_mAP_visible": 0.25519107455023204,
+        "a_mAP_per_class_visible": [
+          0.24395181717876477,
+          0.3254153497296458,
+          0.40759671499717703,
+          0.3000287190370406,
+          0.12407140978869674,
+          0.15159062882137794,
+          0.11987988621622186,
+          0.48303927003173786,
+          0.04462349396422235,
+          0.6056746493063628,
+          0.29411764705882354,
+          0.08031141188829621,
+          0.18694021638858177,
+          0.2761893703124799,
+          0.30872265574535346,
+          0.2808318689944249,
+          0.10526315789473685
+        ],
+        "a_mAP_unshown": 0.08745599817356065,
+        "a_mAP_per_class_unshown": [
+          0.2607683309362861,
+          0.0693006553417066,
+          0.14929564776920015,
+          0.06052718951614846,
+          0.0035495957404851116,
+          0.0,
+          0.09938620438496323,
+          0.3016665738081229,
+          0.010232544483863848,
+          0.0,
+          0.0,
+          0.19999999999999998,
+          0.07692307692307691,
+          0.05316633624215683,
+          0.2013471169102237,
+          0.0005886968942970608,
+          0.0
+        ]
+      }
+    },
+    "visual_seed2026": {
+      "tight": {
+        "a_mAP": 0.1109975941194925,
+        "a_mAP_per_class": [
+          0.20151000214072953,
+          0.11546926470206802,
+          0.2782859521181865,
+          0.18099694754848358,
+          0.02142949861060282,
+          0.06220602424492183,
+          0.04502518079882686,
+          0.15663755033398363,
+          0.014616903707263717,
+          0.14749291768721365,
+          0.005045298211993381,
+          0.056995127838442135,
+          0.07240230434020511,
+          0.1680344211347414,
+          0.20754346759423659,
+          0.15326823901947378,
+          0.0
+        ],
+        "a_mAP_visible": 0.15410512282797437,
+        "a_mAP_per_class_visible": [
+          0.2030230316623019,
+          0.20400753138347003,
+          0.3108862306562338,
+          0.2093497519354165,
+          0.02190074441275943,
+          0.07140633119214887,
+          0.06826740728240391,
+          0.2509130917688726,
+          0.01633382389450551,
+          0.24085482289599852,
+          0.2965739186055809,
+          0.05700420417548327,
+          0.07312503481730837,
+          0.186641281346969,
+          0.23474734309065817,
+          0.17475253895545317,
+          0.0
+        ],
+        "a_mAP_unshown": 0.0788052694346799,
+        "a_mAP_per_class_unshown": [
+          0.14790490191915284,
+          0.059258962231632156,
+          0.05626837795223811,
+          0.01503126041188703,
+          0.0029026679841897235,
+          0.0,
+          0.03030981159154194,
+          0.12139415893292874,
+          0.005703819110492125,
+          0.0,
+          0.0,
+          0.4375,
+          0.02992984027466785,
+          0.034470961196915784,
+          0.08363684769404996,
+          0.0001568933511423666,
+          0.0
+        ]
+      },
+      "loose": {
+        "a_mAP": 0.3147954974454125,
+        "a_mAP_per_class": [
+          0.45933163482495165,
+          0.396762934374359,
+          0.6817943970492251,
+          0.38418326874365366,
+          0.12700557890748004,
+          0.09868219000126334,
+          0.34869911894648237,
+          0.5609308885452174,
+          0.0321861750230012,
+          0.39645451735459575,
+          0.010028537896309605,
+          0.1299043144562123,
+          0.17490726959819103,
+          0.5578540082762585,
+          0.6193136991960565,
+          0.37259888109650646,
+          0.0008860422822480342
+        ],
+        "a_mAP_visible": 0.3905481990534559,
+        "a_mAP_per_class_visible": [
+          0.4626517980496743,
+          0.5468347337786492,
+          0.7134761268703079,
+          0.4294841686512445,
+          0.1287475169995396,
+          0.11814141713692151,
+          0.33434318071031327,
+          0.7441384540011605,
+          0.0353960746745609,
+          0.5871047495983241,
+          0.46756452750096306,
+          0.13005467006225538,
+          0.1768341072529485,
+          0.6332650171129859,
+          0.6551894726811573,
+          0.4221926472160872,
+          0.053900721611657626
+        ],
+        "a_mAP_unshown": 0.2736444026386023,
+        "a_mAP_per_class_unshown": [
+          0.41511692057921895,
+          0.27581905661410233,
+          0.4485199814904448,
+          0.15438436107904582,
+          0.07946582424596244,
+          0.0,
+          0.3657147228583895,
+          0.48193537774595163,
+          0.016424601499203696,
+          0.0,
+          0.0,
+          0.5,
+          0.031350756318486356,
+          0.17472269887503325,
+          0.5285489315999351,
+          0.08537400139605587,
+          0.0
+        ]
+      },
+      "at5": {
+        "a_mAP": 0.1789532132405359,
+        "a_mAP_per_class": [
+          0.2960200417187797,
+          0.17855338826603856,
+          0.41669121883915583,
+          0.2387804816190187,
+          0.04091630978829461,
+          0.08373305885132896,
+          0.08108845815629531,
+          0.4023256314434611,
+          0.019670876003452967,
+          0.2583763581436918,
+          0.005052927693837122,
+          0.09429204958017366,
+          0.11855305607328974,
+          0.25050471806641067,
+          0.30413258467434234,
+          0.2535134661715387,
+          0.0
+        ],
+        "a_mAP_visible": 0.23730040182862655,
+        "a_mAP_per_class_visible": [
+          0.29826261157838707,
+          0.3036408557792804,
+          0.4593107973445813,
+          0.2765339734435297,
+          0.04172106687833032,
+          0.09916037205973796,
+          0.11117863208936253,
+          0.6142498027384431,
+          0.021221803722297386,
+          0.3836707998828857,
+          0.2967338290557288,
+          0.09439042793592954,
+          0.11974353446933672,
+          0.280879066024545,
+          0.33727480240465335,
+          0.2961344556796221,
+          0.0
+        ],
+        "a_mAP_unshown": 0.09889571203401308,
+        "a_mAP_per_class_unshown": [
+          0.23735423184857937,
+          0.09570528975991728,
+          0.132928530925297,
+          0.03859677571954676,
+          0.005187747035573123,
+          0.0,
+          0.06241854987474798,
+          0.3234271780481892,
+          0.0100380348201606,
+          0.0,
+          0.0,
+          0.5,
+          0.02992984027466785,
+          0.08216852019937589,
+          0.16317306761016825,
+          0.0002993384619989822,
+          0.0
+        ]
+      }
+    }
+  }
+}

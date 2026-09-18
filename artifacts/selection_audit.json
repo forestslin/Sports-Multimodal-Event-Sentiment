@@ -1,0 +1,228 @@
+{
+  "note": "Source-language metadata are unavailable in whisper_v1_en and therefore cannot be audited.",
+  "splits": {
+    "train": {
+      "official_games": 300,
+      "retained_games": 176,
+      "excluded_games": 124,
+      "retained_labelled_games": 176,
+      "excluded_labelled_games": 98,
+      "retained_composition": {
+        "leagues": {
+          "england_epl": 8,
+          "europe_uefa-champions-league": 35,
+          "france_ligue-1": 25,
+          "germany_bundesliga": 28,
+          "italy_serie-a": 49,
+          "spain_laliga": 31
+        },
+        "seasons": {
+          "2014-2015": 21,
+          "2015-2016": 45,
+          "2016-2017": 110
+        },
+        "league_seasons": {
+          "england_epl/2014-2015": 2,
+          "england_epl/2015-2016": 4,
+          "england_epl/2016-2017": 2,
+          "europe_uefa-champions-league/2014-2015": 9,
+          "europe_uefa-champions-league/2015-2016": 18,
+          "europe_uefa-champions-league/2016-2017": 8,
+          "france_ligue-1/2015-2016": 1,
+          "france_ligue-1/2016-2017": 24,
+          "germany_bundesliga/2014-2015": 5,
+          "germany_bundesliga/2015-2016": 7,
+          "germany_bundesliga/2016-2017": 16,
+          "italy_serie-a/2014-2015": 1,
+          "italy_serie-a/2015-2016": 4,
+          "italy_serie-a/2016-2017": 44,
+          "spain_laliga/2014-2015": 4,
+          "spain_laliga/2015-2016": 11,
+          "spain_laliga/2016-2017": 16
+        }
+      },
+      "excluded_composition": {
+        "leagues": {
+          "england_epl": 50,
+          "europe_uefa-champions-league": 27,
+          "france_ligue-1": 2,
+          "germany_bundesliga": 3,
+          "italy_serie-a": 7,
+          "spain_laliga": 35
+        },
+        "seasons": {
+          "2014-2015": 24,
+          "2015-2016": 44,
+          "2016-2017": 56
+        },
+        "league_seasons": {
+          "england_epl/2014-2015": 2,
+          "england_epl/2015-2016": 21,
+          "england_epl/2016-2017": 27,
+          "europe_uefa-champions-league/2014-2015": 13,
+          "europe_uefa-champions-league/2015-2016": 11,
+          "europe_uefa-champions-league/2016-2017": 3,
+          "france_ligue-1/2014-2015": 1,
+          "france_ligue-1/2015-2016": 1,
+          "germany_bundesliga/2015-2016": 3,
+          "italy_serie-a/2014-2015": 6,
+          "italy_serie-a/2015-2016": 1,
+          "spain_laliga/2014-2015": 2,
+          "spain_laliga/2015-2016": 7,
+          "spain_laliga/2016-2017": 26
+        }
+      },
+      "retained_label_counts": {
+        "Ball out of play": 11271,
+        "Clearance": 2825,
+        "Corner": 1748,
+        "Direct free-kick": 919,
+        "Foul": 4239,
+        "Goal": 585,
+        "Indirect free-kick": 3811,
+        "Kick-off": 891,
+        "Offside": 761,
+        "Penalty": 57,
+        "Red card": 23,
+        "Shots off target": 1940,
+        "Shots on target": 2093,
+        "Substitution": 1002,
+        "Throw-in": 6641,
+        "Yellow card": 716,
+        "Yellow->red card": 13
+      },
+      "excluded_label_counts": {
+        "Ball out of play": 6379,
+        "Clearance": 1529,
+        "Corner": 904,
+        "Direct free-kick": 362,
+        "Foul": 2213,
+        "Goal": 288,
+        "Indirect free-kick": 2042,
+        "Kick-off": 460,
+        "Offside": 372,
+        "Penalty": 30,
+        "Red card": 7,
+        "Shots off target": 998,
+        "Shots on target": 1061,
+        "Substitution": 552,
+        "Throw-in": 3884,
+        "Yellow card": 399,
+        "Yellow->red card": 7
+      },
+      "retained_annotations_per_labelled_game": 224.6306818181818,
+      "excluded_annotations_per_labelled_game": 219.25510204081633,
+      "label_distribution_total_variation": 0.025374891900396396,
+      "league_distribution_total_variation": 0.4827712609970674
+    },
+    "valid": {
+      "official_games": 100,
+      "retained_games": 54,
+      "excluded_games": 46,
+      "retained_labelled_games": 54,
+      "excluded_labelled_games": 39,
+      "retained_composition": {
+        "leagues": {
+          "england_epl": 3,
+          "europe_uefa-champions-league": 9,
+          "france_ligue-1": 8,
+          "germany_bundesliga": 7,
+          "italy_serie-a": 16,
+          "spain_laliga": 11
+        },
+        "seasons": {
+          "2014-2015": 8,
+          "2015-2016": 15,
+          "2016-2017": 31
+        },
+        "league_seasons": {
+          "england_epl/2014-2015": 1,
+          "england_epl/2015-2016": 1,
+          "england_epl/2016-2017": 1,
+          "europe_uefa-champions-league/2014-2015": 1,
+          "europe_uefa-champions-league/2015-2016": 6,
+          "europe_uefa-champions-league/2016-2017": 2,
+          "france_ligue-1/2016-2017": 8,
+          "germany_bundesliga/2014-2015": 1,
+          "germany_bundesliga/2015-2016": 4,
+          "germany_bundesliga/2016-2017": 2,
+          "italy_serie-a/2014-2015": 1,
+          "italy_serie-a/2015-2016": 1,
+          "italy_serie-a/2016-2017": 14,
+          "spain_laliga/2014-2015": 4,
+          "spain_laliga/2015-2016": 3,
+          "spain_laliga/2016-2017": 4
+        }
+      },
+      "excluded_composition": {
+        "leagues": {
+          "england_epl": 16,
+          "europe_uefa-champions-league": 11,
+          "france_ligue-1": 1,
+          "germany_bundesliga": 1,
+          "italy_serie-a": 2,
+          "spain_laliga": 15
+        },
+        "seasons": {
+          "2014-2015": 12,
+          "2015-2016": 22,
+          "2016-2017": 12
+        },
+        "league_seasons": {
+          "england_epl/2015-2016": 11,
+          "england_epl/2016-2017": 5,
+          "europe_uefa-champions-league/2014-2015": 7,
+          "europe_uefa-champions-league/2015-2016": 4,
+          "france_ligue-1/2015-2016": 1,
+          "germany_bundesliga/2014-2015": 1,
+          "italy_serie-a/2014-2015": 2,
+          "spain_laliga/2014-2015": 2,
+          "spain_laliga/2015-2016": 6,
+          "spain_laliga/2016-2017": 7
+        }
+      },
+      "retained_label_counts": {
+        "Ball out of play": 3423,
+        "Clearance": 823,
+        "Corner": 520,
+        "Direct free-kick": 293,
+        "Foul": 1233,
+        "Goal": 186,
+        "Indirect free-kick": 1086,
+        "Kick-off": 284,
+        "Offside": 235,
+        "Penalty": 22,
+        "Red card": 5,
+        "Shots off target": 518,
+        "Shots on target": 674,
+        "Substitution": 304,
+        "Throw-in": 2066,
+        "Yellow card": 196,
+        "Yellow->red card": 2
+      },
+      "excluded_label_counts": {
+        "Ball out of play": 2440,
+        "Clearance": 602,
+        "Corner": 367,
+        "Direct free-kick": 117,
+        "Foul": 782,
+        "Goal": 158,
+        "Indirect free-kick": 745,
+        "Kick-off": 213,
+        "Offside": 149,
+        "Penalty": 13,
+        "Red card": 7,
+        "Shots off target": 412,
+        "Shots on target": 450,
+        "Substitution": 219,
+        "Throw-in": 1406,
+        "Yellow card": 149,
+        "Yellow->red card": 6
+      },
+      "retained_annotations_per_labelled_game": 219.8148148148148,
+      "excluded_annotations_per_labelled_game": 211.15384615384616,
+      "label_distribution_total_variation": 0.027848494288203157,
+      "league_distribution_total_variation": 0.48711755233494364
+    }
+  }
+}

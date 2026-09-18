@@ -1,44 +1,91 @@
-# Multimodal Anticipatory Reasoning Framework for Sports Event Detection
+# Reproducibility package for PeerJ manuscript CS-142751
 
-## Description
-This repository contains the PyTorch implementation of a novel deep learning framework designed for multimodal sports event detection and sentiment analysis. The architecture tackles the asynchronous and heterogeneous nature of multimodal sports data (e.g., visual frames, acoustic intensities, commentary texts) through robust spatiotemporal modeling and physics-informed flow field penalties.
+This package reproduces the revised SoccerNet-v2 action-spotting experiment. It uses public SoccerNet-v2 point-event labels and ResNet PCA-512 descriptors together with timestamped Whisper-v1 English-normalized commentary from SoccerNet-Echoes. Source broadcast videos are not redistributed.
 
-## Dataset Information
-The repository currently includes a mock dataset generator (`MultimodalSportsDataset` within `dataset.py`) for structural validation. It generates synthetic random tensors representing multimodal inputs (Vision, Audio, Text) mapped to an abstract Arousal-Valence space, allowing researchers to run and verify the codebase immediately. For actual experiments, researchers should replace this with extracted feature sets (e.g., CLIP, VGGish, RoBERTa embeddings) from sports datasets like Sports-1M or SportsSum.
+## Analysis scope
 
-## Code Information
-- **`models/tgre.py`**: Implementation of the Temporal Graph Recurrent Encoder (TGRE) module, handling cross-modal attention and GRU-based sequence dynamics.
-- **`models/affr.py`**: Implementation of the Anticipatory Flow Field Reasoning (AFFR) module, generating sentiment potential fields and applying stochastic noise injection.
-- **`models/framework.py`**: End-to-end framework assembly connecting TGRE and AFFR.
-- **`train.py`**: The main training loop, which includes the calculation of physics-informed Divergence and Curl Lagrangian penalties.
-- **`dataset.py`**: The multimodal PyTorch Dataset loader.
+- Task: 17-class point-event action spotting.
+- Prediction unit: the right edge of one completed two-second observation bin.
+- Inputs: current and preceding 10 seconds of visual descriptors; ASR segments ending no later than the prediction time within a 20-second lookback.
+- Split: intersection of public modalities while preserving official SoccerNet assignments (176 train games; 54 validation games).
+- Primary metrics: class-macro event mAP within symmetric ±5-, ±10-, and ±20-second matching radii and matched-event timestamp MAE within ±10 seconds. Official SoccerNet metrics are reported separately.
+- Runs: seven primary model configurations × five prespecified random seeds × 20 fixed epochs, plus text and post-processing controls.
 
-## Usage Instructions
-You can run a structural test of the architecture using the included mock dataset generator. This validates the forward pass, backward pass, and the custom physics-informed loss implementations without needing to download large video datasets.
+## Software
 
-```bash
-# Clone the repository
-git clone https://github.com/forestslin/Sports-Multimodal-Event-Sentiment.git
-cd Sports-Multimodal-Event-Sentiment
+Formal runs used Python 3.13 on CPU with the versions in `requirements.txt`. A CUDA 13.0 build was verified on an RTX 3060 Laptop GPU, but it was slower for these small networks because loading and evaluation dominated; GPU and CPU outputs were not mixed.
 
-# Start the training process
-python train.py --epochs 100
+## Files
+
+- `src/tgre_experiment.py`: data construction, models, training, NMS, and event-level evaluation.
+- `src/run_experiments.py`: repeated-seed experiment driver.
+- `src/summarize_results.py`: mean, SD, descriptive confidence intervals, and paired seed differences.
+- `src/official_crosscheck.py`: prediction export and independent evaluation with the official SoccerNet package.
+- `src/robustness_and_timing.py`: missing-text sensitivity and CPU inference timing.
+- `src/game_bootstrap.py`: paired 1,000-replicate validation-game cluster bootstrap.
+- `src/game_bootstrap_sensitivity.py`: empty-class sensitivity analysis for the paired game bootstrap.
+- `src/nms_sensitivity.py`: 4-, 8-, and 12-second NMS sensitivity.
+- `src/audit_selection.py` and `src/audit_text_coverage.py`: intersection and ASR-coverage audits.
+- `src/finalize_revision_evidence.py`: manuscript-facing synthesis of frozen outputs.
+- `src/make_figures.py`: submission figures and figure source-data tables.
+- `artifacts/modality_coverage.json`: exact retained game identifiers and availability counts.
+- `artifacts/experiment_results.json`: final seed-level records.
+- `artifacts/final_revision_evidence.json`: final aggregate statistics and controls.
+- `artifacts/game_cluster_bootstrap_sensitivity.json`: fixed-17-class and available-class bootstrap intervals.
+- `artifacts/robustness_and_timing.json`: missing-text and timing measurements.
+- `artifacts/official_crosscheck`: representative late-fusion and visual results from the official SoccerNet evaluator.
+- `figures/source_data`: CSV data used to draw quantitative figures.
+
+## Data placement
+
+After obtaining SoccerNet access, place `Labels-v2.json` under:
+
+```text
+data/SN-Labels/<league>/<season>/<game>/Labels-v2.json
 ```
-To apply this to your own data, modify `dataset.py` to load your specific multimodal feature arrays.
 
-## Requirements
-The codebase is built on standard deep learning libraries. Ensure you have the following installed:
-- Python 3.8 or higher
-- PyTorch 1.10 or higher
-- NumPy
+Place the two half-level descriptors in an adjacent `f` directory (one directory above this repository):
 
-## Methodology
-The framework relies on two core innovations:
-1. **Temporal Graph Recurrent Encoder (TGRE)**: Utilizes cross-modal attention mechanisms and directed message passing to dynamically align asynchronous multimodal inputs, coupled with a soft Semantic Zone-Based Embedding mechanism.
-2. **Anticipatory Flow Field Reasoning (AFFR)**: Formulates event anticipation as predicting a gradient flow field ($F_{raw}^t$). It implements Sentiment Potential Modulation by calculating the exact gradient $\nabla\Phi(p)$ of an affective potential field via PyTorch's `autograd`. To ensure spatial consistency across multimodal flow trajectories, Divergence and Curl penalties are explicitly minimized during training.
+```text
+../f/<league>/<season>/<game>/1_ResNET_TF2_PCA512.npy
+../f/<league>/<season>/<game>/2_ResNET_TF2_PCA512.npy
+```
 
-## Citations
-If you use this codebase or methodology in your research, please cite our corresponding manuscript once published. (Citation details to be updated upon publication).
+Place the SoccerNet-Echoes Arrow file at:
 
-## License & Contribution Guidelines
-This project is licensed under the MIT License. Contributions, bug reports, and pull requests are welcome. Please ensure that any pull requests follow the existing coding style and include appropriate tests.
+```text
+data/SN-echoes/whisper_v1_en/1.0.0/soccer_net_echoes_hf_dataset-train.arrow
+```
+
+The scripts under `src/download_*.py` record the data retrieval logic and versions. Access to SoccerNet resources remains subject to the dataset terms.
+
+## Reproduce the final analysis
+
+From the repository root, create an environment and install the recorded dependencies:
+
+```text
+python -m venv .venv
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+```
+
+Then run the analysis from the repository root:
+
+```text
+.venv/Scripts/python.exe src/run_experiments.py --models visual text late rtgre rtgre_flow tcn_visual tcn_fusion --seeds 2026 2027 2028 2029 2030 --epochs 20 --device cpu
+.venv/Scripts/python.exe src/summarize_results.py
+.venv/Scripts/python.exe src/audit_selection.py
+.venv/Scripts/python.exe src/audit_text_coverage.py
+.venv/Scripts/python.exe src/game_bootstrap.py
+.venv/Scripts/python.exe src/game_bootstrap_sensitivity.py
+.venv/Scripts/python.exe src/nms_sensitivity.py
+.venv/Scripts/python.exe src/robustness_and_timing.py
+.venv/Scripts/python.exe src/official_crosscheck.py --model late --seed 2028 --epochs 20
+.venv/Scripts/python.exe src/finalize_revision_evidence.py
+.venv/Scripts/python.exe src/make_figures.py
+```
+
+The representative official-evaluator cross-check does not replace the five-seed primary analysis.
+
+## Statistical interpretation
+
+Values are mean±SD across five independently initialized training runs. Five-seed t intervals describe training-initialization uncertainty. A paired game-cluster bootstrap describes uncertainty across the 54 validation games conditional on the trained checkpoints. No null-hypothesis significance label is attached. Published full-split results are not treated as directly comparable to this availability intersection.

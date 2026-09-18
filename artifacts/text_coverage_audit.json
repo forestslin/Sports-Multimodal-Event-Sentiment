@@ -1,0 +1,18 @@
+{
+  "train": {
+    "bins": 483642,
+    "segments": 270690,
+    "bins_with_completed_segment_in_20s_window": 469183,
+    "segment_coverage_fraction": 0.9701039198415357,
+    "bins_with_nonzero_256_term_vector": 463688,
+    "nonzero_vector_fraction": 0.958742210147175
+  },
+  "valid": {
+    "bins": 148054,
+    "segments": 83782,
+    "bins_with_completed_segment_in_20s_window": 144308,
+    "segment_coverage_fraction": 0.9746984208464479,
+    "bins_with_nonzero_256_term_vector": 141069,
+    "nonzero_vector_fraction": 0.9528212679157605
+  }
+}

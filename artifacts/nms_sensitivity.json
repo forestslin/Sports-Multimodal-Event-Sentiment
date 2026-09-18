@@ -1,0 +1,242 @@
+[
+  {
+    "model": "visual",
+    "seed": 2026,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.24347340709963572,
+    "event_mAP@10s": 0.2782565569824588,
+    "event_mAP@20s": 0.3056050136257508
+  },
+  {
+    "model": "visual",
+    "seed": 2026,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.25237536234803465,
+    "event_mAP@10s": 0.30345514473678326,
+    "event_mAP@20s": 0.33428860210477007
+  },
+  {
+    "model": "visual",
+    "seed": 2026,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.2426596521898638,
+    "event_mAP@10s": 0.3101485193661291,
+    "event_mAP@20s": 0.3462828884068829
+  },
+  {
+    "model": "visual",
+    "seed": 2027,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.231405757292303,
+    "event_mAP@10s": 0.2660908460958644,
+    "event_mAP@20s": 0.29737708436967203
+  },
+  {
+    "model": "visual",
+    "seed": 2027,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.23915890577126817,
+    "event_mAP@10s": 0.2913284074097173,
+    "event_mAP@20s": 0.3260537112349355
+  },
+  {
+    "model": "visual",
+    "seed": 2027,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.22813092700334278,
+    "event_mAP@10s": 0.2969449179385224,
+    "event_mAP@20s": 0.3371220570581635
+  },
+  {
+    "model": "visual",
+    "seed": 2028,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.2508752083591603,
+    "event_mAP@10s": 0.2858566795439537,
+    "event_mAP@20s": 0.31513453878525227
+  },
+  {
+    "model": "visual",
+    "seed": 2028,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2591376041599305,
+    "event_mAP@10s": 0.31203728077235765,
+    "event_mAP@20s": 0.34338251683491205
+  },
+  {
+    "model": "visual",
+    "seed": 2028,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.2476237606324292,
+    "event_mAP@10s": 0.31755616115784235,
+    "event_mAP@20s": 0.3542486991022731
+  },
+  {
+    "model": "visual",
+    "seed": 2029,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.2591130427026952,
+    "event_mAP@10s": 0.29338947611146765,
+    "event_mAP@20s": 0.3200823857473121
+  },
+  {
+    "model": "visual",
+    "seed": 2029,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2654405940241765,
+    "event_mAP@10s": 0.31700831273303104,
+    "event_mAP@20s": 0.3467582460986056
+  },
+  {
+    "model": "visual",
+    "seed": 2029,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.25722873913845,
+    "event_mAP@10s": 0.32371268754102683,
+    "event_mAP@20s": 0.35814792972146375
+  },
+  {
+    "model": "visual",
+    "seed": 2030,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.23473335434408962,
+    "event_mAP@10s": 0.27006121280880724,
+    "event_mAP@20s": 0.3028797310609277
+  },
+  {
+    "model": "visual",
+    "seed": 2030,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2406660912279408,
+    "event_mAP@10s": 0.2929313175939175,
+    "event_mAP@20s": 0.32817408790690433
+  },
+  {
+    "model": "visual",
+    "seed": 2030,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.23163604632213253,
+    "event_mAP@10s": 0.3004836226014022,
+    "event_mAP@20s": 0.3425318666486932
+  },
+  {
+    "model": "late",
+    "seed": 2026,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.24753498084896924,
+    "event_mAP@10s": 0.28699916147389704,
+    "event_mAP@20s": 0.3168028036889217
+  },
+  {
+    "model": "late",
+    "seed": 2026,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2561431493626503,
+    "event_mAP@10s": 0.3136259554738327,
+    "event_mAP@20s": 0.34662782771142925
+  },
+  {
+    "model": "late",
+    "seed": 2026,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.24357615112647715,
+    "event_mAP@10s": 0.3206793864593567,
+    "event_mAP@20s": 0.3591813034903858
+  },
+  {
+    "model": "late",
+    "seed": 2027,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.2517065851458183,
+    "event_mAP@10s": 0.2863064769887024,
+    "event_mAP@20s": 0.31984230393277063
+  },
+  {
+    "model": "late",
+    "seed": 2027,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2598424402964938,
+    "event_mAP@10s": 0.31312982808258844,
+    "event_mAP@20s": 0.3495785083597139
+  },
+  {
+    "model": "late",
+    "seed": 2027,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.24898270261372854,
+    "event_mAP@10s": 0.3188482967174945,
+    "event_mAP@20s": 0.3622329147873961
+  },
+  {
+    "model": "late",
+    "seed": 2028,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.2509228323945865,
+    "event_mAP@10s": 0.2874993117529612,
+    "event_mAP@20s": 0.3188827913043099
+  },
+  {
+    "model": "late",
+    "seed": 2028,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.26046846923888567,
+    "event_mAP@10s": 0.31423437613232064,
+    "event_mAP@20s": 0.34989086364718613
+  },
+  {
+    "model": "late",
+    "seed": 2028,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.2512708991303107,
+    "event_mAP@10s": 0.3212097193124309,
+    "event_mAP@20s": 0.3635494707060105
+  },
+  {
+    "model": "late",
+    "seed": 2029,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.25758318463502067,
+    "event_mAP@10s": 0.29260888401733254,
+    "event_mAP@20s": 0.3187642446244862
+  },
+  {
+    "model": "late",
+    "seed": 2029,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.266913025846208,
+    "event_mAP@10s": 0.3192728210579467,
+    "event_mAP@20s": 0.3478926413025621
+  },
+  {
+    "model": "late",
+    "seed": 2029,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.25640507104068144,
+    "event_mAP@10s": 0.3264135989919669,
+    "event_mAP@20s": 0.36038987926336546
+  },
+  {
+    "model": "late",
+    "seed": 2030,
+    "nms_radius_seconds": 4.0,
+    "event_mAP@5s": 0.24634140161102913,
+    "event_mAP@10s": 0.28434664577211216,
+    "event_mAP@20s": 0.3148171594254839
+  },
+  {
+    "model": "late",
+    "seed": 2030,
+    "nms_radius_seconds": 8.0,
+    "event_mAP@5s": 0.2547870172502855,
+    "event_mAP@10s": 0.31156973543101,
+    "event_mAP@20s": 0.34550693739442445
+  },
+  {
+    "model": "late",
+    "seed": 2030,
+    "nms_radius_seconds": 12.0,
+    "event_mAP@5s": 0.24404022437516257,
+    "event_mAP@10s": 0.3190212051417348,
+    "event_mAP@20s": 0.3592760201268393
+  }
+]

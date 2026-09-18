@@ -1,0 +1,117 @@
+{
+  "method": "paired nonparametric bootstrap over validation games; identical game multiplicities for both models; AP recomputed from game-weighted ranked detections within each replicate",
+  "results": [
+    {
+      "comparison": "late minus visual",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": 0.011014450586378344,
+      "game_cluster_bootstrap_ci95_low": 0.004563021644534666,
+      "game_cluster_bootstrap_ci95_high": 0.018520228683305537
+    },
+    {
+      "comparison": "rtgre minus visual",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": 0.003253882897798088,
+      "game_cluster_bootstrap_ci95_low": -0.004979661850936753,
+      "game_cluster_bootstrap_ci95_high": 0.011695360474576212
+    },
+    {
+      "comparison": "rtgre_flow minus visual",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": -0.0009344492680495753,
+      "game_cluster_bootstrap_ci95_low": -0.007014297212985913,
+      "game_cluster_bootstrap_ci95_high": 0.0078044529336444134
+    },
+    {
+      "comparison": "tcn_visual minus visual",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": -0.03246689516510167,
+      "game_cluster_bootstrap_ci95_low": -0.039593568715491044,
+      "game_cluster_bootstrap_ci95_high": -0.024669725014191225
+    },
+    {
+      "comparison": "tcn_fusion minus visual",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": -0.028090896260652733,
+      "game_cluster_bootstrap_ci95_low": -0.034304723500133055,
+      "game_cluster_bootstrap_ci95_high": -0.019928775518013416
+    },
+    {
+      "comparison": "rtgre minus late",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": -0.007760567688580256,
+      "game_cluster_bootstrap_ci95_low": -0.014991734596880815,
+      "game_cluster_bootstrap_ci95_high": -0.0012242491878102656
+    },
+    {
+      "comparison": "rtgre_flow minus rtgre",
+      "metric": "class-macro event mAP with +/-10-s matching",
+      "games": 54,
+      "paired_training_seeds": [
+        2026,
+        2027,
+        2028,
+        2029,
+        2030
+      ],
+      "bootstrap_replicates": 1000,
+      "point_mean_difference_across_seeds": -0.004188332165847663,
+      "game_cluster_bootstrap_ci95_low": -0.009992234307883163,
+      "game_cluster_bootstrap_ci95_high": 0.003909713871909459
+    }
+  ]
+}
