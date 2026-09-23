@@ -1,6 +1,10 @@
 # Reproducibility package for PeerJ manuscript CS-142751
 
+Manuscript: **Evaluating time-bounded visual and automatic speech recognition commentary fusion for soccer action spotting**.
+
 This package reproduces the revised SoccerNet-v2 action-spotting experiment. It uses public SoccerNet-v2 point-event labels and ResNet PCA-512 descriptors together with timestamped Whisper-v1 English-normalized commentary from SoccerNet-Echoes. Source broadcast videos are not redistributed.
+
+The SoccerNet-v2 labels and visual descriptors are third-party resources distributed by the [SoccerNet project](https://www.soccer-net.org/) under its access conditions. The third-party [SoccerNet-Echoes dataset](https://huggingface.co/datasets/SoccerNet/SN-echoes) is shared by the SoccerNet team, curated by SimulaMet under the AI-Storyteller project, and lists dataset DOI [10.57967/hf/2539](https://doi.org/10.57967/hf/2539). This study used `whisper_v1_en/1.0.0/soccer_net_echoes_hf_dataset-train.arrow` from that dataset. The code and derived analysis outputs in this repository were generated for the present study; they do not represent a re-release of the third-party source materials. This GitHub repository does not itself have an archive DOI.
 
 ## Analysis scope
 
